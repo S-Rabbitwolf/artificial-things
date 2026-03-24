@@ -57,17 +57,17 @@ function loadStyle(getStyleDirectory) {
     let addedStyle = document.createElement("link");
     addedStyle.setAttribute("rel", "stylesheet");
     addedStyle.setAttribute("media", "all");
-    addedStyle.setAttribute("href", `${urlRoot}${getStyleDirectory}/styles.css`);
+    addedStyle.setAttribute("href", `${urlRoot}themes/${getStyleDirectory}/styles.css`);
     document.head.append(addedStyle);
     addedStyle.addEventListener("load", function(){
         document.body.classList.remove("prehide"); // to reduce FOUC
     });
 
     // add chosen JS file
-    loadJS(`${urlRoot}${getStyleDirectory}/scripts.js`);
+    loadJS(`${urlRoot}themes/${getStyleDirectory}/scripts.js`);
 
     // update about this theme
-    getData(`${urlRoot}${getStyleDirectory}/readme.txt`, {}, false).then(function(response) {
+    getData(`${urlRoot}themes/${getStyleDirectory}/readme.txt`, {}, false).then(function(response) {
         document.querySelector("#modalPopup div").innerHTML = response;
     });
 
@@ -115,7 +115,7 @@ function toggleModal() {
 // dynamically style info from JSON data in core-style-menu.js
 async function updateMenus() {
     document.querySelector("#styleList").innerHTML = ""; // clear existing innerHTML, if any
-    getData("core-style-menu.js").then(function(menuItems) {
+    getData("themes/core-style-menu.js").then(function(menuItems) {
         for (oneItem of menuItems) {
             document.querySelector("#styleList").innerHTML += `<li><a href="?style=${oneItem.path}">${oneItem.label}</a></li>`;
         }
