@@ -59,6 +59,9 @@ function loadStyle(getStyleDirectory) {
     addedStyle.setAttribute("media", "all");
     addedStyle.setAttribute("href", `${urlRoot}${getStyleDirectory}/styles.css`);
     document.head.append(addedStyle);
+    addedStyle.addEventListener("load", function(){
+        document.body.classList.remove("prehide"); // to reduce FOUC
+    });
 
     // add chosen JS file
     loadJS(`${urlRoot}${getStyleDirectory}/scripts.js`);
@@ -71,7 +74,7 @@ function loadStyle(getStyleDirectory) {
 }
 
 
-// callback function to confirm theme JS load
+// callback function to confirm theme JS load, output console message, update page title, and show page elements
 function confirmTheme(theme) {
     console.log(`${theme} theme loaded`);
     document.title += ` - ${theme}`;

@@ -14,9 +14,10 @@ This holds the initial DOM for the page. Your JS is free to hack the DOM, other 
     <link rel="stylesheet" href="core-styles.css" media="all">
     <script src="core-scripts.js" defer></script>
 </head>
-<body>
+<!-- body tag starts hidden and is then revealed after theme load; see CSS and JS -->
+<body class="prehide">
 
-    <!-- navigation elements, to be dynamically updated by JS -->
+    <!-- navigation elements, many to be dynamically updated by JS -->
     <nav>
         <a id="navBurger">&#9776;</a>
         <ul>
@@ -111,11 +112,11 @@ This holds the initial DOM for the page. Your JS is free to hack the DOM, other 
             who are experts in technology but limited in their understanding of people. “We are people ourselves,” they
             think, “so we understand people.”</p>
         <p>But in fact, we humans are amazingly complex. Those who have not studied human behavior often think it is pretty 
-            simple. Engineers, moreover, make the mistake of thinking that logical explanation is sufficient: “If only people
-            would read the instructions,” they say, “everything would be all right....” As a result, they come to believe that 
-            all people must think this way, and they design their machines accordingly. When people have trouble, the engineers
-            are upset, but often for the wrong reason.... They often explain to me in great, logical detail, why their designs 
-            are good, powerful, and wonderful.</p>
+            simple. Engineers, moreover, make the mistake of thinking that logical explanation is sufficient....
+        <p>“If only people would read the instructions,” they say, “everything would be all right.”</p>
+        <p>As a result, they come to believe that all people must think this way, and they design their machines accordingly. 
+            When people have trouble, the engineers are upset, but often for the wrong reason.... [explaining] to me in great,
+            logical detail, why their designs are good, powerful, and wonderful.</p>
         <p>“Why are people having problems?” they wonder.</p>
         <p>“You are being too logical,” I say. “You are designing for people the way you would like them to be, not for
             the way they really are.”</p>

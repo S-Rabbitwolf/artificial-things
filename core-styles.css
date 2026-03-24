@@ -184,11 +184,17 @@ body.showModal {
     overflow: hidden;
 }
 
+/* show modal when page has added class */
 body.showModal #modalCover,
 body.showModal #modalPopup {
 	display: block;
 }
 
+/* page loads with the header, main, footer hidden, to be revealed after load, reducing FOUC */
+body.prehide {
+    visibility: hidden;
+    opacity: 0;
+}
 
 /* ----- MEDIA QUERY for landscape/desktop layout ----- */
 @media screen and (orientation: landscape) {
