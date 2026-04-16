@@ -17,7 +17,7 @@ export function initializePage() {
 
 }
 
-    // Im having a ton of fun with this
+    // Im having a ton of fun with this i love the name I got
     document.querySelector("h1").textContent = " Zany Palm Tree Mode ";
 
     // lil animation
