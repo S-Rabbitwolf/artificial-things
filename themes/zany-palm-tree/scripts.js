@@ -13,6 +13,6 @@ Your first statement should be to call confirmTheme() with the name of your them
 export function initializePage() {
 
     // call main function that outputs message to console and update page title
-    confirmTheme("palm-tree");
+    confirmTheme("zany-palm-tree");
 
 }
