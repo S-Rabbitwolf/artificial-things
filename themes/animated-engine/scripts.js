@@ -15,4 +15,12 @@ export function initializePage() {
     // call main function that outputs message to console and update page title
     confirmTheme("Animated Engine");
 
+let newArticle = document.createElement("article");
+document.body.appendChild(newArticle);
+let header = document.querySelector("header");
+let main = document.querySelector("main");
+let footer = document.querySelector("footer");
+
+newArticle.appendChild(header, main, footer);
+
 }
