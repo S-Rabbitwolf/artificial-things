@@ -14,5 +14,9 @@
     {
         "label":"Some Code",
         "path":"some-code"
+    },
+    {
+        "label":"Cat",
+        "path":"fearless-kitten"
     }
 ]
