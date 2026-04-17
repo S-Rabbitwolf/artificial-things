@@ -1,9 +1,9 @@
 <!-- a small HTML snippet -- keep this formatting light -->
 
-<p><strong>Layout name:</strong> zany-palm-tree </p>
+<p><strong>Layout name:</strong> naptime-nuisance </p>
 
-<p><strong>Layout path:</strong> zany-palm-tree </p>
+<p><strong>Layout path:</strong> naptime-nuisance </p>
 
-<p><strong>Description:You know, sometimes I end up thinking to myself, what would happen if, and stay with me on this one, we all just woke up and said 'no'?</strong></p>
+<p><strong>Description: A simple set of sleepy-coded tones to ensure a pleasant visual experience. Inspired by old animated wallpaper layouts from the early 2000's as well as Rem Deadlock. I'm not sorry.</strong></p>
 
-<p>This layout has only one modification: padding around the body tag.</p>
+<p>They do lots of things.</p>
