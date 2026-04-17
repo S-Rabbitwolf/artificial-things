@@ -15,7 +15,14 @@ export function initializePage() {
     // call main function that outputs message to console and update page title
     confirmTheme("Naptime Nuisance");
 
+    const mainBox = document.querySelector("main");
     const revealItems = document.querySelectorAll("main p, main aside, footer");
+
+    // main box setup wip
+
+    mainBox.style.opacity = "0";
+    mainBox.style.transform = "translateY(30px)";
+    mainBox.style.transition = "opacity 1s ease, transform 1s ease";
 
     // Hiding until content is reached
     revealItems.forEach(function(item) {
@@ -34,7 +41,12 @@ export function initializePage() {
                 entry.target.style.opacity = "1";
                 entry.target.style.transform = "translateY(0)"
                 entry.target.style.filter = "blur(0)";
+                // adds glow class as content enters. Removes as it leaves.
+                entry.target.classList.add("focusedGlow");
+            } else {
+                entry.target.classList.remove("focusedGlow");
             }
+        
         });
     }, {
         //how much needs to be visible before enter trigger
