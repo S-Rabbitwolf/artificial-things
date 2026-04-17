@@ -69,10 +69,22 @@ main {
     max-width: 850px;
     margin: 0 auto;
     padding: 0 1.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 main p, main aside {
+    background: rgba(20,15,40, 0.6);
+    border: 1px solid rgba(189, 246, 255, 0.5);
+    border-radius: 10x;
     margin-bottom: 1.5rem;
+
+    box-shadow: 
+    0 0 12px rgba(120, 170, 255, 0.15),
+    0 0 30px rgba(120, 170, 255, 0.08);
+
+    backdrop-filter: blur(2px);
 }
 
 aside {
