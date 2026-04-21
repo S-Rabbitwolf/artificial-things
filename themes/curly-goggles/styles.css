@@ -1,0 +1,25 @@
+/* 
+
+Default CSS - like wearing nothing at all 
+
+*/
+
+body {
+    padding: 1rem;
+    font-family:'Lucida Sans Unicode';
+    background-color:#feebe8;
+}
+header{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #dcfaf6;
+    border: solid;
+    border-color: #dcfaf6;
+    border-radius: 2em;
+    color:#52180f;
+}
+
+main{
+    color:#255752;
+
+}
