@@ -31,4 +31,8 @@
         "label":"Naptime Nuisance",
         "path": "naptime-nuisance"
     },
+        "label":"Black Pink",
+        "path":"black-pink"
+    }
+
 ]
